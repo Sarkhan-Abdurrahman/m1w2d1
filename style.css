@@ -1,0 +1,67 @@
+.container {
+    background-color: #ffffff;
+    margin-top: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 95vw;
+    height: 120vh;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px grey;
+    position: relative;
+  }
+
+  .image {
+    width: 85vw;
+    height: 110vh;
+    border-radius: 2%;
+    box-shadow: 3px 3px 8px grey;
+    background-image: url(assets/iris-olgierd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+  }
+
+  #floppy {
+    position: sticky;
+    left: 85%;
+    top: 10%;
+  }
+
+  .bottom-bar {
+    position: sticky;
+    top: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icons {
+    width: 85vw;
+    height: 110vh;
+    visibility: hidden;
+  }
+
+  .image:hover {
+    filter: grayscale(0.3);
+  }
+
+  .image:hover .icons {
+    visibility: visible;
+  }
+
+  #floppy:hover {
+    filter: contrast(10);
+    cursor: pointer;
+  }
+
+  #share:hover,
+  #download:hover,
+  #ellipsis:hover {
+    filter: contrast(10);
+    cursor: pointer;
+  }
